@@ -99,4 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
       e.target.closest('.option-details').classList.remove('show')
     })
   })
+
+  // Замена видео
+
+  const playVideo = document.querySelector('.video-play-img')
+
+  playVideo.addEventListener('click', () => {
+    playVideo.parentElement.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/jmkx-1y43Rc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+  })
 })
